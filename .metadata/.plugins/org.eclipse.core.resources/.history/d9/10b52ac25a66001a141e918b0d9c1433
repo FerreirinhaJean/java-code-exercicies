@@ -1,0 +1,75 @@
+package applicantion;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		String paises = sc.nextLine();
+		while (paises != null) {
+			switch (paises) {
+			case "brasil":
+			case "portugal":
+				System.out.println("Feliz Natal!");
+				break;
+			case "alemanha":
+				System.out.println("Frohliche Weihnachten!");
+				break;
+			case "austria":
+				System.out.println("Frohe Weihnacht!");
+				break;
+			case "coreia":
+				System.out.println("Chuk Sung Tan!");
+				break;
+			case "espanha":
+			case "argentina":
+			case "chile":
+			case "mexico":
+				System.out.println("Feliz Navidad!");
+				break;
+			case "grecia":
+				System.out.println("Kala Christougena!");
+				break;
+			case "estados-unidos":
+			case "inglaterra":
+			case "australia":
+			case "antardida":
+			case "canada":
+				System.out.println("Merry Christmas!");
+				break;
+			case "suecia":
+				System.out.println("God Jul!");
+				break;
+			case "irlanda":
+				System.out.println("Nollaig Shona Dhuit!");
+				break;
+			case "belgica":
+				System.out.println("Zalig Kerstfeest!");
+				break;
+			case "italia":
+			case "libia":
+				System.out.println("Buon Natale!");
+				break;
+			case "siria":
+			case "marrocos":
+				System.out.println("Milad Mubarak!");
+				break;
+			case "japao":
+				System.out.println("Merii Kurisumasu!");
+				break;
+			case "turquia":
+				System.out.println("Mutlu Noeller");
+				break;
+			default:
+				System.out.println("--- NOT FOUND ---");
+				break;
+			}
+			 paises = sc.nextLine();
+		}
+
+		sc.close();
+	}
+
+}
